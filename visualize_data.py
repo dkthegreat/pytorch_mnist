@@ -2,7 +2,7 @@ import os
 from skimage import io
 import torchvision.datasets.mnist as mnist
 
-root="./mnist/data/MNIST/raw"
+root="./data/MNIST/raw"
 train_set = (
     mnist.read_image_file(os.path.join(root, 'train-images-idx3-ubyte')),
     mnist.read_label_file(os.path.join(root, 'train-labels-idx1-ubyte'))
